@@ -2,28 +2,30 @@
 
 const chalk = require('chalk');
 const commander = require('commander');
-const create = require('./src/create');
+const init = require('./src/init');
+const record = require('./src/record');
+const run = require('./src/run');
+const server = require('./src/server');
 
 commander
   .version(require('./package.json').version)
-  .arguments('<cmd> <name> [path]')
-  .action(function (cmd, name, path) {
-    switch (cmd) {
-      case 'create':
-        create(name, path);
-        break;
-    }
+  .option('init', 'init test project', function () {
+    init();
+  })
+  .option('record <filePath>', 'start a record', function (filePath) {
+    record(filePath);
+  })
+  .option('server', 'start selenium-standalone server', function () {
+    server();
+  })
+  .option('run <filePath>', 'run a test', function (filePath) {
+    run(filePath);
   })
   .option('upgrade', 'upgrade version', function () {
     upgrade();
   })
   .on('--help', function(){
-    console.log('');
-    console.log('  Examples: <cmd> [projectName] [version]');
-    console.log('');
-    console.log('    meetyou-backstage create-angular [projectName] [version]  create a angular1.x demo');
-    console.log('    meetyou-backstage create-antd [projectName] [version]     create a antd3.x demo');
-    console.log('');
+
   })
   .parse(process.argv);
 

@@ -4,7 +4,7 @@
   "description": "base on alibaba/uirecorder",
   "main": "index.js",
   "scripts": {
-    "create": "node ./index.js create test.demo"
+    "postinstall": "./node_modules/.bin/selenium-standalone install --drivers.firefox.baseURL=http://npm.taobao.org/mirrors/geckodriver --baseURL=http://npm.taobao.org/mirrors/selenium --drivers.chrome.baseURL=http://npm.taobao.org/mirrors/chromedriver --drivers.ie.baseURL=http://npm.taobao.org/mirrors/selenium"
   },
   "bin": {
     "meetyou-uirecorder": "./index.js"
@@ -37,7 +37,13 @@
     "prompt-confirm": "1.2.0",
     "request": "2.81.0",
     "request-progress": "3.0.0",
-    "uirecorder": "^2.5.37"
+    "uirecorder": "^2.5.37",
+    "chai": "3.5.0",
+    "jwebdriver": "2.2.4",
+    "mocha-parallel-tests": "1.2.4",
+    "mochawesome-uirecorder": "1.5.22",
+    "resemblejs-node": "1.0.0",
+    "selenium-standalone": "6.x.x"
   },
   "devDependencies": {}
 }
