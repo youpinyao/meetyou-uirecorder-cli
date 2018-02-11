@@ -1,7 +1,7 @@
 const path = require('path');
 const uirecorder = require('uirecorder');
 
-module.exports = function(filePath) {
+module.exports = function(filePath, options) {
   const cmdFilename = path.resolve(process.cwd(), filePath);
 
   console.log('====================================');
@@ -10,5 +10,6 @@ module.exports = function(filePath) {
 
   uirecorder.start({
     cmdFilename,
+    ...options,
   })
 }
