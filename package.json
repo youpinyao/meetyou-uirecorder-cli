@@ -1,0 +1,43 @@
+{
+  "name": "meetyou-uirecorder-cli",
+  "version": "0.0.1",
+  "description": "base on alibaba/uirecorder",
+  "main": "index.js",
+  "scripts": {
+    "create": "node ./index.js create test.demo"
+  },
+  "bin": {
+    "meetyou-uirecorder": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youpinyao/meetyou-uirecorder-cli.git"
+  },
+  "keywords": [
+    "uirecorder",
+    "meetyou",
+    "test"
+  ],
+  "author": "youpinyao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/youpinyao/meetyou-uirecorder-cli/issues"
+  },
+  "homepage": "https://github.com/youpinyao/meetyou-uirecorder-cli#readme",
+  "dependencies": {
+    "chalk": "2.0.1",
+    "cli-spinners": "1.0.0",
+    "commander": "^2.12.2",
+    "decompress": "4.2.0",
+    "del": "3.0.0",
+    "exec-series": "1.0.3",
+    "mocha": "^5.0.0",
+    "ora": "1.3.0",
+    "progress": "2.0.0",
+    "prompt-confirm": "1.2.0",
+    "request": "2.81.0",
+    "request-progress": "3.0.0",
+    "uirecorder": "^2.5.37"
+  },
+  "devDependencies": {}
+}
