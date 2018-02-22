@@ -2,6 +2,12 @@
 
 base on alibaba/uirecorder
 
+## 安装
+
+````node
+npm i meetyou-uirecorder-cli -g
+````
+
 ## issues
 
 1. uirecorder 2.5.10 版本才能跑mobile，最新不行[https://github.com/alibaba/uirecorder/issues/206](https://github.com/alibaba/uirecorder/issues/206)
