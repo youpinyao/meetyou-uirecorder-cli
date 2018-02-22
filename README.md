@@ -4,7 +4,7 @@ base on alibaba/uirecorder
 
 ## issues
 
-uirecorder 2.5.10 版本才能跑mobile，最新不行[https://github.com/alibaba/uirecorder/issues/206](https://github.com/alibaba/uirecorder/issues/206)
+1. uirecorder 2.5.10 版本才能跑mobile，最新不行[https://github.com/alibaba/uirecorder/issues/206](https://github.com/alibaba/uirecorder/issues/206)
 
 ## PC端测试
 
