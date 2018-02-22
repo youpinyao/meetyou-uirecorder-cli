@@ -6,6 +6,8 @@ base on alibaba/uirecorder
 
 ````node
 npm i meetyou-uirecorder-cli -g
+
+建议用 cnpm i meetyou-uirecorder-cli -g 不然应该安装不了哈哈。
 ````
 
 ## issues
