@@ -37,7 +37,7 @@
     "prompt-confirm": "1.2.0",
     "request": "2.81.0",
     "request-progress": "3.0.0",
-    "uirecorder": "^2.5.37",
+    "uirecorder": "2.5.10",
     "chai": "3.5.0",
     "jwebdriver": "2.2.4",
     "mocha-parallel-tests": "1.2.4",
